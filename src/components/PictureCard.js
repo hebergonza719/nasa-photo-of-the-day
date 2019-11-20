@@ -1,13 +1,13 @@
 import React from "react";
 
-const PictureCard = (props) => {
+const PictureCard = ( {picture} ) => {
   return (
     <div>
-      <h2>Date: {props.picture.date}</h2>
-      <img src={props.picture.url} alt={props.picture.title}></img>
-      <h2>Picture Title: {props.picture.title}</h2>
-      <h2>Author: {props.picture.copyright}</h2>
-      <h2>Explanation: {props.picture.explanation}</h2>
+      <h3>Date: {picture.date}</h3>
+      <img src={picture.url} alt={picture.title}></img>
+      <h3>Picture Title: {picture.title}</h3>
+      <h3>Author: {picture.copyright}</h3>
+      <h3>Explanation: {picture.explanation}</h3>
     </div>
   );
 };
